@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="form-action 'none'">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <Header>
+        <div class="header">
+            <img src="images/Subtraction 1.png" alt="Logo Image" class="logo">
+            <div class="rightHeader">
+                <nav class="menuNav">
+                    <ul class="menu">
+                        <li><a href="#">ჩვენზე</a></li>
+                        <li><a href="#">თემები</a></li>
+                        <li><a href="#">რესურსები</a></li>
+                    </ul>
+                </nav>
+                <div class="user">
+                    <button>
+                        <img class="userIcon" src="images/Icon metro-user.svg" alt="User Icon">                        
+                        შესვლა
+                    </button>
+                </div>
+                <div class="searchDiv">
+                    <input type="search" name="search" id="search">
+                    <i class="fas fa-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                    </i> 
+                </div>
+                
+            </div>
+        </div>
+    </Header>
+    <div class="container">
+        <nav class="pageNav">
+            <a href="">მთავარი</a>
+            <a href="">რეგისტრაცია</a>
+        </nav>
+        <div class="registration">
+            <h3 class="title">რეგისტრაცია</h3>
+            <p class="regPar">ავტორიზაცია შესაძლებელია მხოლოდ <br/> განმანათლებლებისთვის</p>
+            <form action="#" method="post" target="_self">
+                <h4 class="label">რეგიონი</h4>
+                <details class="custom-select">
+                    <summary class="radios customInput" id="region">
+                        <input type="radio" name="region" id="defaultRegion" title="აირჩიეთ რეგიონი" checked disabled>
+                        <input type="radio" name="region" id="Tbilisi" title="თბილისი" value="თბილისი" required>
+                        <input type="radio" name="region" id="Kartli" title="ქართლი" value="ქართლი">
+                        <input type="radio" name="region" id="Kakheti" title="კახეთი" value="კახეთი">
+                        <input type="radio" name="region" id="Javakheti" title="ჯავახეთი" value="ჯავახეთი">
+                        <input type="radio" name="region" id="Imereti" title="იმერეთი" value="იმერეთი">
+                        <input type="radio" name="region" id="Samegrelo" title="სამეგრელო" value="სამეგრელო">
+                        <input type="radio" name="region" id="Svaneti" title="სვანეთი" value="სვანეთი">
+                        <input type="radio" name="region" id="Adjara" title="აჭარა" value="აჭარა">
+                    </summary>
+                    <ul class="list">
+                        <li>
+                            <label for="Tbilisi">თბილისი</label>
+                        </li>
+                        <li>
+                            <label for="Kartli">ქართლი</label>
+                        </li>
+                        <li>
+                            <label for="Kakheti">კახეთი</label>
+                        </li>
+                        <li>
+                            <label for="Javakheti">ჯავახეთი</label>
+                        </li>
+                        <li>
+                            <label for="Imereti">იმერეთი</label>
+                        </li>
+                        <li>
+                            <label for="Samegrelo">სამეგრელო</label>
+                        </li>
+                        <li>
+                            <label for="Svaneti">სვანეთი</label>
+                        </li>
+                        <li>
+                            <label for="Adjara">აჭარა</label>
+                        </li>
+                    </ul>
+                </details>
+
+                <h4 class="label">პოზიცია</h4>
+                <details class="custom-select">
+                    <summary class="radios customInput" id="position">
+                        <input disabled type="radio" name="position" id="defaultPosition" title="აირჩიეთ პოზიცია" checked>
+                        <input type="radio" name="position" id="მასწავლებელი" title="მასწავლებელი" required>
+                        <input type="radio" name="position" id="სამართალდამცავი" title="სამართალდამცავი">
+                        <input type="radio" name="position" id="სხვა" title="სხვა">
+                    </summary>
+                    <ul class="list">
+                        <li>
+                            <label for="მასწავლებელი">მასწავლებელი</label>
+                        </li>
+                        <li>
+                            <label for="სამართალდამცავი">სამართალდამცავი</label>
+                        </li>
+                        <li>
+                            <label for="სხვა">სხვა</label>
+                        </li>
+                    </ul>
+                </details>
+
+
+
+                <label class="label workingPlace" for="workingPlace">სამუშაო ადგილი</label>
+                <input class="customInput" type="text" name="workingPlace" id="workingPlace">
+
+                <label class="label" for="name">სახელი</label>
+                <input class="customInput" type="text" name="name" id="name" required>
+
+                <label class="label" for="surname">გვარი</label>
+                <input class="customInput" type="text" name="surname" id="surname" required>
+                <div class="passwords">
+                    <label class="label passLabel" for="password">პაროლი</label>
+                    <input class="customInput passwordInput" type="password" name="password" id="password" required>
+                    <i class="passIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8s11 8 11 8s-4 8-11 8s-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></g></svg>
+                    </i>                    
+                </div>
+                <div class="passwords">
+                    <label class="label" for="passwordIdentical">გაიმეორეთ პაროლი</label>
+                    <input class="customInput passwordInput" type="password" name="passwordIdentical" id="passwordIdentical" required>
+                    <i class="passIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8s11 8 11 8s-4 8-11 8s-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></g></svg>
+                    </i>                    
+                </div>
+
+
+                <div class="checkboxes">
+                    <div class="check">
+                        <input type="checkbox" name="usage" id="usage" required>
+                        <span class="customCheckbox"></span>
+                        <label class="label checkLabel" for="usage">ვეთახმები პლატფორმის <a href="#">მოხმარების პირობებს</a></label>                        
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="privacy" id="privacy" required>
+                        <span class="customCheckbox"></span>
+                        <label class="label checkLabel" for="privacy">გავეცანი <a href="#">კონფიდენციალურობის პოლიტიკას</a></label>
+                    </div>
+                </div>
+
+                <input class="submit" type="submit" value="რეგისტრაცია">
+
+                <div class="popup">
+                    <div class="popupContent">
+                        <h3>რეგისტრაცია</h3>
+                        <table>
+                            <tr>
+                                <th>სახელი:</th>
+                                <td class="popupName">ნოდარ</td>
+                            </tr>
+                            <tr>
+                                <th>გვარი:</th>
+                                <td class="popupSurname">ნოდარ</td>
+                            </tr>
+                            <tr>
+                                <th>რეგიონი:</th>
+                                <td class="popupRegion">ნოდარ</td>
+                            </tr>
+                            <tr>
+                                <th>პოზიცია:</th>
+                                <td class="popupPosition">ნოდარ</td>
+                            </tr>
+                            <tr>
+                                <th>ელ.ფოსტა:</th>
+                                <td class="popupEmail">example@gmail.com</td>
+                            </tr>
+                        </table>
+                        <button class="popupBtn">X</button>
+                    </div>
+                </div>
+
+                <span class="requiredWarning">გთხოვთ შეავსოთ ყველა ველი</span>
+            </form>
+            <div class="socialReg">
+                <span class="or">ან</span>
+                <div class="socialBtns">
+                    <button class="facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12.028" height="22.458" viewBox="0 0 12.028 22.458">
+                            <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M12.849,12.633l.624-4.064h-3.9V5.931a2.032,2.032,0,0,1,2.291-2.2h1.773V.275A21.621,21.621,0,0,0,10.49,0C7.279,0,5.179,1.947,5.179,5.471v3.1H1.609v4.064h3.57v9.825H9.573V12.633Z" transform="translate(-1.609)" fill="#fff"/>
+                        </svg>
+                        <span>
+                            რეგისტრაცია Facebook-ით
+                        </span>                
+                        
+                    </button>
+                    <button class="gmail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21.197" height="21.629" viewBox="0 0 21.197 21.629">
+                            <path id="Icon_simple-google" data-name="Icon simple-google" d="M11.175,9.269v3.709h6.134a5.839,5.839,0,0,1-6.134,4.663,6.827,6.827,0,0,1,0-13.652,6.087,6.087,0,0,1,4.312,1.666L18.42,2.827A10.377,10.377,0,0,0,11.175,0a10.815,10.815,0,0,0,0,21.629c6.242,0,10.382-4.388,10.382-10.568a9.853,9.853,0,0,0-.17-1.793Z" transform="translate(-0.36)" fill="#fff"/>
+                        </svg>
+                        <span>
+                            რეგისტრაცია Gmail-ით
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <span class="regQuestion">
+                უკვე რეგისტრირებული ხართ?
+                <a href="#">
+                    მიყევით ამ ბმულს
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11.992" height="11.992" viewBox="0 0 11.992 11.992">
+                        <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(-9.086 -9.086)">
+                          <path id="Path_793" data-name="Path 793" d="M10.5,19.664,19.664,10.5" fill="none" stroke="#7279ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                          <path id="Path_794" data-name="Path 794" d="M10.5,10.5h9.164v9.164" fill="none" stroke="#7279ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                        </g>
+                    </svg>                                                            
+                </a>
+            </span>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="contact">
+                <a href="mailto:info@school.ge">info@school.ge</a>
+                <div class="socialIcons">
+                    <a href="facebook.com">
+                        <svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="8.172" height="16.469" viewBox="0 0 8.172 16.469">
+                            <path id="Path_99" data-name="Path 99" d="M18.7,13.577h1a.174.174,0,0,1,.174.174v6.318a.59.59,0,0,0,.59.59h2.3a.59.59,0,0,0,.59-.59V13.748a.174.174,0,0,1,.174-.174h1.664a.59.59,0,0,0,.59-.5l.387-2.313a.59.59,0,0,0-.59-.705H23.63a.274.274,0,0,1-.274-.274V8.3a.531.531,0,0,1,.59-.59h1.744a.59.59,0,0,0,.59-.59V4.78a.59.59,0,0,0-.59-.59H23.615c-3.836,0-3.739,3.09-3.739,3.541V9.882a.174.174,0,0,1-.174.174h-1a.59.59,0,0,0-.59.59V12.96a.59.59,0,0,0,.59.617Z" transform="translate(-18.108 -4.19)" fill="#202631"/>
+                        </svg>
+                    </a>
+                    <a href="youtube.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.957" height="16.249" viewBox="0 0 18.957 16.249">
+                            <path id="Path_96" data-name="Path 96" d="M7.047,23.822a47.917,47.917,0,0,0,6.432.427,47.918,47.918,0,0,0,6.432-.423,3.517,3.517,0,0,0,3.047-3.48V11.906a3.517,3.517,0,0,0-3.047-3.48,48.708,48.708,0,0,0-12.864,0A3.517,3.517,0,0,0,4,11.906v8.436A3.517,3.517,0,0,0,7.047,23.822ZM11.3,14.567a1.158,1.158,0,0,1,1.784-.975l2.654,1.693a.982.982,0,0,1,0,1.652l-2.654,1.693a1.158,1.158,0,0,1-1.784-.975Z" transform="translate(-4 -8)" fill="#202631"/>
+                        </svg> 
+                    </a>                       
+                </div>
+            </div>
+            <nav class="info">
+                <ul>
+                    <li><a href="#">მოხმარების პირობები</a></li>
+
+                    <li><a href="#">კონფიდენციალურობა</a></li>
+
+                    <li>© 2021 ყველა უფლება დაცულია</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

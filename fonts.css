@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'FiraGO Bold';
+    src: url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Bold.eot');
+    src: url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Bold.eot') format('embedded-opentype'),
+        url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Bold.woff2') format('woff2'),
+        url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Bold.woff') format('woff'),
+        url('./fonts/Fonts/FiraGO_TTF_1001/Roman/FiraGO-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FiraGO Medium';
+    src: url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Medium.eot');
+    src: url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Medium.eot') format('embedded-opentype'),
+        url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Medium.woff2') format('woff2'),
+        url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Medium.woff') format('woff'),
+        url('./fonts/Fonts/FiraGO_TTF_1001/Roman/FiraGO-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FiraGO Regular';
+    src: url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Regular.eot');
+    src: url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Regular.eot') format('embedded-opentype'),
+        url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Regular.woff2') format('woff2'),
+        url('./fonts/Fonts/FiraGO_WEB_1001/Roman/FiraGO-Regular.woff') format('woff'),
+        url('./fonts/Fonts/FiraGO_TTF_1001/Roman/FiraGO-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
