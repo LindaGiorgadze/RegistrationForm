@@ -66,4 +66,18 @@ closeBtn.addEventListener('click', () => {
     popup.style.display = "none";
 })
 
+//* Burger Menu *//
 
+const burger = document.querySelector('.burger')
+const burgerMenu = document.querySelector('.burgerMenu');
+const respMenu = burgerMenu.querySelector('.menu');
+
+burger.addEventListener('click', () => {
+    if (respMenu.style.display === "none") {
+        respMenu.style.display = "block";
+        burger.classList.add('burgerAn')
+    } else {
+        respMenu.style.display = "none";
+        burger.classList.remove('burgerAn')
+    }
+})
